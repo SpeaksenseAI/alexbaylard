@@ -1,0 +1,9 @@
+﻿---
+alwaysApply: true
+---
+
+At the start of any new chat or agent session, read these files for repo context:
+1. AGENTS.md (root)
+2. docs/DIRECTORY-INDEX.md
+
+Use docs/DIRECTORY-INDEX.md to find key paths and conventions.
