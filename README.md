@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alex Baylard | Portfolio
 
-## Getting Started
+A modern, responsive portfolio website for Alex Baylard - Actor, Singer, Dancer. Built with Next.js 15, React 19, Tailwind CSS, and shadcn/ui.
 
-First, run the development server:
+## 🚀 Features
 
+- **Modern Tech Stack**: Next.js App Router, React Server Components
+- **Beautiful UI**: Built with Tailwind CSS and shadcn/ui components
+- **Responsive Design**: Mobile-first approach, looks great on all devices
+- **SEO Optimized**: Pre-configured metadata and optimal semantic structure
+- **Fast Performance**: Optimized fonts and image handling
+
+## 📋 Requirements
+
+- Node.js 18+ 
+- pnpm (recommended) or npm/yarn
+
+## 🚀 Quick Start
+
+### Step 1: Install Dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 2: Run Development Server
+```bash
+pnpm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Deployment to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is optimized for deployment on Vercel. 
 
-## Learn More
+1. Push this repository to your GitHub account.
+2. Log in to [Vercel](https://vercel.com).
+3. Click "Add New" -> "Project".
+4. Import your GitHub repository.
+5. Vercel will automatically detect Next.js. Leave default settings and click **Deploy**.
+6. Once deployed, go to the project **Settings** -> **Domains** to connect `alexbaylard.com`.
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+.
+├── src/
+│   ├── app/           # App router, pages, and layouts
+│   ├── components/    # Reusable UI components (shadcn)
+│   └── lib/           # Utility functions
+├── public/            # Static assets (images, icons)
+└── package.json       # Project dependencies
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🖼️ Updating Assets
 
-## Deploy on Vercel
+To update the placeholder images, place your high-resolution photos in the `public/` directory and update the `src/app/page.tsx` file to reference them. Suggested images:
+- Headshot for the About section
+- Hero background image or video reel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created for Alex Baylard - March 2026
