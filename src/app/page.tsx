@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -16,26 +17,8 @@ import {
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-zinc-50 font-sans dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
-      {/* 
-        NAVIGATION
-        Sticky header for easy access to all sections. Casting directors want frictionless navigation.
-      */}
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between mx-auto px-4 md:px-8">
-          <div className="font-bold text-xl tracking-tight uppercase">Alex Baylard</div>
-          <nav className="hidden md:flex gap-6 text-sm font-medium">
-            <a href="#news" className="transition-colors hover:text-foreground/80 text-foreground/60">News</a>
-            <a href="#media" className="transition-colors hover:text-foreground/80 text-foreground/60">Reels & Media</a>
-            <a href="#headshots" className="transition-colors hover:text-foreground/80 text-foreground/60">Headshots</a>
-            <a href="#resume" className="transition-colors hover:text-foreground/80 text-foreground/60">Resume</a>
-            <a href="#bio" className="transition-colors hover:text-foreground/80 text-foreground/60">Bio</a>
-            <a href="#contact" className="transition-colors hover:text-foreground/80 text-foreground/60">Contact</a>
-          </nav>
-          <Button variant="default" className="hidden md:inline-flex rounded-full">
-            <Download className="w-4 h-4 mr-2" /> Resume PDF
-          </Button>
-        </div>
-      </header>
+      {/* NAVIGATION */}
+      <Navbar />
 
       <main className="flex-1">
         {/* 
